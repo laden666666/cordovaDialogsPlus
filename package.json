@@ -1,0 +1,20 @@
+{
+  "name": "cordova-dialogsPlus",
+  "version": "1.0.0",
+  "description": "An Cordova project is an extension to cordova-plugin-dialogs. It provides the progress bar, loading layer, file selection dialog box, toast to Android and IOS platform. Android part of the code reference to the cordova-plugin-dialogs source code.",
+  "cordova": {
+    "id": "cordova-dialogs",
+    "platforms": [
+      "android",
+	  "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/cordova-plugin-dialogs"
+  },
+  "keywords": [
+      "cordova","dialogs","cordova-dialogsPlus"
+  ],
+  "author": "laden666666"
+}

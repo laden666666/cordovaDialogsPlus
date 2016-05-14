@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="cordova-dialogsPlus"
+      version="1.0.0">
+
+    <name>DialogsPlus</name>
+    <description>An Cordova project is an extension to cordova-plugin-dialogs. It provides the progress bar, loading layer, file selection dialog box, toast to Android and IOS platform. Android part of the code reference to the cordova-plugin-dialogs source code.</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,Dialogs</keywords>
+	
+	<dependency id="cordova-plugin-filepath" />
+	<dependency id="cordova-plugin-camera" />
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="DialogsPlus">
+                <param name="android-package" value="com.zrsoft.dialogsPlus.DialogsPlus"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/DialogsPlus.java" target-dir="src/com/zrsoft/dialogsPlus" />
+
+        <!-- android specific notification apis -->
+        <js-module src="www/android/dialogsPlus.js" name="dialogsPlus_android">
+            <merges target="navigator.dialogsPlus" />
+        </js-module>
+
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="DialogsPlus">
+                <param name="ios-package" value="CDVDialogsPlus"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVDialogsPlus.h" />
+	    <source-file src="src/ios/CDVDialogsPlus.m" />
+		
+        <header-file src="src/ios/CDVDialogsPlusToast.h" />
+	    <source-file src="src/ios/CDVDialogsPlusToast.m" />
+
+        <!-- android specific notification apis -->
+        <js-module src="www/ios/dialogsPlus.js" name="dialogsPlus_ios">
+            <merges target="navigator.dialogsPlus" />
+        </js-module>
+    </platform>
+
+</plugin>
