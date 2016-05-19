@@ -6,12 +6,12 @@ The Cordova project is an extension to cordova-plugin-dialogs. It provides the p
 ## Installation
 This requires cordova 5.0+
 
-    cordova plugin add https://github.com/laden666666/UnifiedExceptionHandlingDome
+    cordova plugin add https://github.com/laden666666/cordovaDialogsPlus
 Does not support earlier versions
 
 插件只支持cordova5.0及以上版本
 
-    cordova plugin add https://github.com/laden666666/UnifiedExceptionHandlingDome
+    cordova plugin add https://github.com/laden666666/cordovaDialogsPlus
 
 ## Supported Platforms
 
