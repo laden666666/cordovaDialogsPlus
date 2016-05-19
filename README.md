@@ -14,9 +14,9 @@ Does not support earlier versions
     cordova plugin add https://github.com/laden666666/UnifiedExceptionHandlingDome
 
 ## Supported Platforms
-- Android
-- iOS
+
 支持的平台为
+
 - Android
 - iOS
 
