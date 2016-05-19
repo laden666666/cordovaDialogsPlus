@@ -51,6 +51,12 @@ Does not support earlier versions
   选择文件，安卓上你可以使用系统对话框选择文件，选择后将获得所选文件的绝对路径。但是在ios上，你只能通过此插件依赖的cordova-plugin-camera插件，去选择相册里的图片，这主要是因为ios的文件沙箱机制，我无法向安卓那样获取其他应用目录里的图片。
   
     window.navigator.dialogsPlus.chooseFile(title, successCallback, errorCallback);
+
+  Display toast notice. The duration of the unit is milliseconds.
+  
+  通过类似安卓toast消息的形式显示通知。持续事件的单位是毫秒。
+  
+    window.navigator.dialogsPlus.showNotice(notice,duration)
     
   
   
